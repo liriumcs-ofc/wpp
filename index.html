@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro TV 3D Wallpaper</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importa Three.js, OrbitControls e o GLTFLoader necessário para o modelo -->
+    <script src="https://cloudflare.com"></script>
+    <script src="https://jsdelivr.net"></script>
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body>
+    <!-- Vídeo oculto usado como textura. Substitua o "src" por outro link .mp4 se quiser -->
+    <video id="tv-video" loop muted autoplay playsinline style="display:none;">
+        <source src="https://mixkit.co" type="video/mp4">
+    </video>
+
+    <!-- Container onde o Three.js vai desenhar a TV -->
+    <div id="canvas-container"></div>
+
+    <!-- Camada que cria o efeito de vinheta nas bordas da tela -->
+    <div id="vignette"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

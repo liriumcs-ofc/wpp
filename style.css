@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Cor de fundo cinza claro/branco flat */
+    background-color: #dc6a2c; 
+}
+
+#canvas-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Camada da Vinheta Suave */
+#vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradiente radial cria o efeito escurecido suave nas bordas */
+    background: radial-gradient(circle, rgba(0,0,0,0) 45%, rgba(0,0,0,0.22) 100%);
+    /* pointer-events: none permite que você clique através da div para girar a TV */
+    pointer-events: none; 
+    z-index: 2;
+}
